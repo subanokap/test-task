@@ -1,7 +1,50 @@
+.eslintcache
+/.web-server-pid
+/app/config/parameters.yml
+/config/parameters.yaml
+/build/
+/var/*
+!/var/cache
+/var/cache/*
+!var/cache/.gitkeep
+!/var/sessions
+/var/sessions/*
+!var/sessions/.gitkeep
+!var/SymfonyRequirements.php
+/web/bundles/
+node_modules
+/web/build/
+/web/build_v3/
+npm-debug.log
+yarn-error.log
+
+/app/bootstrap.php.cache
+/bin/*
+!bin/console
+/composer.phar
+
+/web/assetic/
+/web/assets/
+/web/uploads/*
+/web/attachment_export_requests/*
+
+/var/spool/*
+.idea/*
+!.idea/scopes/
+!.idea/scopes/php_inspections_scope.xml
+!.idea/inspectionProfiles/phpstorm_inspections.xml
+
+.vscode
+.web-server-pid
+.DS_Store
+.php_cs.cache
+.php-cs-fixer.cache
+.docker-sync
 
 ###> symfony/framework-bundle ###
 /.env.local
 /.env.local.php
+/.env.test.local.php
 /.env.*.local
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
@@ -11,10 +54,45 @@
 
 ###> phpunit/phpunit ###
 /phpunit.xml
-/.phpunit.cache/
+.phpunit.result.cache
 ###< phpunit/phpunit ###
 
-###> symfony/asset-mapper ###
-/public/assets/
-/assets/vendor/
-###< symfony/asset-mapper ###
+# Playwright E2E tests
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/tests/client/e2e/generatedTests/
+/tests/client/e2e/generatedMarketTests/
+auth.json
+playwright.auth.json
+playwright.env.js
+
+/assets/js_translations/
+/translations/
+
+# Storybook build directory
+/web/storybook_build/
+
+###> friendsofphp/php-cs-fixer ###
+/.php-cs-fixer.php
+/.php-cs-fixer.cache
+###< friendsofphp/php-cs-fixer ###
+
+###> lexik/jwt-authentication-bundle ###
+/config/jwt/*.pem
+###< lexik/jwt-authentication-bundle ###
+
+#result of phpstan
+phpstanresults.txt
+
+#result of executed commands
+executed_commands_results.txt
+
+#result of migration comparing
+migration-directory-hash.txt
+
+api-monitored-dirs.txt
+
+/tmp/
+
+.translain_cookie.txt
