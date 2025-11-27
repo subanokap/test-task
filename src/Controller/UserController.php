@@ -66,6 +66,7 @@ class UserController extends AbstractController
 
         try {
             $ip = $request->getClientIp() ?? '127.0.0.1';
+
             $message = new UserMessage($data, $ip);
 
             $this->messageBus->dispatch($message);
