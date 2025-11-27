@@ -77,11 +77,6 @@ playwright.env.js
 /.php-cs-fixer.php
 /.php-cs-fixer.cache
 ###< friendsofphp/php-cs-fixer ###
-
-###> lexik/jwt-authentication-bundle ###
-/config/jwt/*.pem
-###< lexik/jwt-authentication-bundle ###
-
 #result of phpstan
 phpstanresults.txt
 
@@ -96,3 +91,6 @@ api-monitored-dirs.txt
 /tmp/
 
 .translain_cookie.txt
+###> phpstan/phpstan ###
+phpstan.neon
+###< phpstan/phpstan ###
